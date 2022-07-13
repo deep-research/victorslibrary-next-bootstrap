@@ -1,6 +1,6 @@
 <template>
     <div>
-        <b-navbar toggleable="lg" variant="light" type="light">
+        <b-navbar toggleable="lg" variant="dark" type="dark">
             <!-- The Media Query in default.vue was necessary to add a container here. -->
             <div  class="container">
                 <b-navbar-brand href="#">Victor's Library</b-navbar-brand>
@@ -9,8 +9,10 @@
 
                 <b-collapse id="nav-collapse" is-nav>         
                     <b-navbar-nav class="ml-auto">
+                        <b-nav-item href="http://reenchantment.band">Original Music</b-nav-item>
+                        <b-nav-item href="https://songs.victorslibrary.com" target="_blank">Old Website</b-nav-item>
+                        <b-nav-item href="/about">About</b-nav-item>
                         <b-nav-item href="https://bandcamp.com/contact?b=1631569890" target="_blank">Contact</b-nav-item>
-                        <b-nav-item href="http://songs.victorslibrary.com" target="_blank">Old Version of This Website</b-nav-item>
                     </b-navbar-nav> 
                 </b-collapse>
             </div>
@@ -20,6 +22,7 @@
 
 <style scoped>
     .navbar {
-        border-bottom: 1px solid silver;
+        /* border-bottom: 1px solid silver; */
+        background-color:  !important;
     }
 </style>
