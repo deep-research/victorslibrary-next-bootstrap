@@ -12,15 +12,6 @@ export default {
       { name: 'format-detection', content: 'telephone=no' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
-    script: [
-      {
-          src: "https://www.googletagmanager.com/gtag/js?id=G-CFVZSZRNH5",
-          async: true,
-      },
-      {
-          src: googleAnalytics,
-      }
-    ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -68,12 +59,4 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
-}
-
-function googleAnalytics() {
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  
-  gtag('config', 'G-CFVZSZRNH5');
 }
