@@ -11,7 +11,6 @@
                     <b-navbar-nav class="ml-auto">
                         <b-nav-item href="http://reenchantment.band">Original Music</b-nav-item>
                         <b-nav-item href="https://songs.victorslibrary.com" target="_blank">Old Website</b-nav-item>
-                        <b-nav-item href="/about">About</b-nav-item>
                         <b-nav-item href="https://bandcamp.com/contact?b=1631569890" target="_blank">Contact</b-nav-item>
                     </b-navbar-nav> 
                 </b-collapse>
