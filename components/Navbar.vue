@@ -35,7 +35,7 @@
         /* text-shadow: 2px 2px blueviolet; */
         font-size: 24px;
         white-space: initial;
-        /* font-weight: bold; */
+        font-weight: bold;
     }
     .nav-link {
         color: white !important;
