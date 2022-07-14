@@ -44,7 +44,7 @@
         color:white;
         border-color: white;
         background-color: rgba(192,192,192, .5);
-        border-radius: 0;
+        /* border-radius: 0; */
     }
     @media only screen and (max-width: 558px) {
         .navbar-brand {
