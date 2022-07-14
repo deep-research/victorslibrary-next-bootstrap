@@ -30,9 +30,10 @@
     .navbar-brand {
         font-family: 'Gilda Display', serif !important;
         letter-spacing: .5rem;
-        text-shadow: 2px 2px darkred;
-        /* /* text-shadow: 2px 2px royalblue; */
+        /* text-shadow: 2px 2px darkred; */
+        /* text-shadow: 2px 2px royalblue; */
         /* text-shadow: 2px 2px blueviolet; */
+
         font-size: 24px;
         white-space: initial;
         font-weight: bold;
