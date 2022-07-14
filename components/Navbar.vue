@@ -1,9 +1,9 @@
 <template>
     <div>
-        <b-navbar toggleable="lg" variant="dark" type="dark">
+        <b-navbar toggleable="lg" variant="dark" type="dark" class="py-3">
             <!-- The Media Query in default.vue was necessary to add a container here. -->
             <div  class="container">
-                <b-navbar-brand href="#">Victor's Library</b-navbar-brand>
+                <b-navbar-brand href="/">VICTOR'S LIBRARY</b-navbar-brand>
 
                 <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
@@ -23,5 +23,18 @@
     .navbar {
         background-image: url("../static/background.png");
         background-size: 350px;
+    }
+
+    .navbar-brand {
+        font-family: 'Gilda Display', serif !important;
+        letter-spacing: .5rem;
+        text-shadow: 2px 2px darkred;
+        font-size: 24px;
+        white-space: initial;
+    }
+    @media only screen and (max-width: 447px) {
+        .navbar-brand {
+            max-width: 176px;
+        }
     }
 </style>
