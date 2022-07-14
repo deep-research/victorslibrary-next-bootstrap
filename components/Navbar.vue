@@ -9,7 +9,6 @@
                     <b-icon v-else icon="chevron-bar-down"></b-icon>
                 </template>
             </b-navbar-toggle>
-
             <b-collapse id="navbar-toggle-collapse" is-nav>         
                 <b-navbar-nav class="ml-auto">
                     <b-nav-item href="http://reenchantment.band">Original Music</b-nav-item>
@@ -32,8 +31,8 @@
         /* text-shadow: 2px 2px darkred; */
         /* text-shadow: 2px 2px royalblue; */
         /* text-shadow: 2px 2px blueviolet; */
-        white-space: initial !important;
-        font-size: 44px;
+        font-size: 42px;
+        white-space: initial;
     }
     .nav-link {
         color: white !important;
@@ -45,13 +44,16 @@
         color:white;
         border-color: white;
         background-color: rgba(192,192,192, .5);
+        border-radius: 0;
     }
     @media only screen and (max-width: 558px) {
         .navbar-brand {
             font-size: 32px;
         }
     }
-    .navbar .container {
-        flex-wrap: nowrap
+        @media only screen and (max-width: 466px) {
+        .navbar-brand {
+            max-width: 180px;
+        }
     }
 </style>
