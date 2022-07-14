@@ -35,7 +35,7 @@
         /* text-shadow: 2px 2px blueviolet; */
         font-size: 24px;
         white-space: initial;
-        font-weight: bold;
+        /* font-weight: bold; */
     }
     .nav-link {
         color: white !important;
@@ -46,7 +46,6 @@
     .navbar-toggler {
         color:white;
         border-color: white;
-        background-color: rgba(0, 0, 0, 0.5);
     }
     @media only screen and (max-width: 447px) {
         .navbar-brand {
