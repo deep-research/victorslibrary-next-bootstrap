@@ -68,5 +68,9 @@ export default {
       'Gilda+Display': true,
       // 'Merienda+One': true,
     }
+  },
+
+  bootstrapVue: {
+    icons: true
   }
 }
