@@ -21,7 +21,7 @@
 
 <style scoped>
     .navbar {
-        /* border-bottom: 1px solid silver; */
-        background-color:  !important;
+        background-image: url("../static/background.png");
+        background-size: 350px;
     }
 </style>
