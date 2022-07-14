@@ -1,8 +1,7 @@
 <template>
-    <b-navbar toggleable="lg" variant="dark" type="dark" class="py-3">
-        <!-- The Media Query in default.vue was necessary to add a container here. -->
-        <div  class="container">
-            <b-navbar-brand href="/">VICTOR'S LIBRARY</b-navbar-brand>
+    <b-navbar toggleable="lg" variant="dark" type="dark">
+        <b-container>
+            <b-navbar-brand href="/">Victor's Library</b-navbar-brand>
 
             <b-navbar-toggle target="navbar-toggle-collapse">
                 <template #default="{ expanded }">
@@ -18,7 +17,7 @@
                     <b-nav-item href="https://bandcamp.com/contact?b=1631569890">Contact</b-nav-item>
                 </b-navbar-nav> 
             </b-collapse>
-        </div>
+        </b-container>
     </b-navbar>
 </template>
 
@@ -28,15 +27,13 @@
         background-size: 350px;
     }
     .navbar-brand {
-        font-family: 'Gilda Display', serif !important;
+        font-family: 'Merienda One', cursive;
         letter-spacing: .5rem;
         /* text-shadow: 2px 2px darkred; */
         /* text-shadow: 2px 2px royalblue; */
         /* text-shadow: 2px 2px blueviolet; */
-
-        font-size: 24px;
-        white-space: initial;
-        font-weight: bold;
+        white-space: initial !important;
+        font-size: 44px;
     }
     .nav-link {
         color: white !important;
@@ -47,10 +44,14 @@
     .navbar-toggler {
         color:white;
         border-color: white;
+        background-color: rgba(192,192,192, .5);
     }
-    @media only screen and (max-width: 447px) {
+    @media only screen and (max-width: 558px) {
         .navbar-brand {
-            max-width: 176px;
+            font-size: 32px;
         }
+    }
+    .navbar .container {
+        flex-wrap: nowrap
     }
 </style>

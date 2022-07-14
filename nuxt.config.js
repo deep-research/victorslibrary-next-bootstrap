@@ -65,8 +65,11 @@ export default {
 
   googleFonts: {
     families: {
-      'Gilda+Display': true,
-      // 'Merienda+One': true,
+      // font-family: 'Gilda Display', serif;
+      // 'Gilda+Display': true,
+
+      // font-family: 'Merienda One', cursive;
+      'Merienda+One': true,
     }
   },
 
