@@ -8,18 +8,18 @@
 
 <script>
 export default {
-  async asyncData({ $content, params, error }) {
-    const slug = params.slug || 'index'
-
-    try {
-      const article = await $content('/', slug).fetch()
-
-      return {
-        article,
-      }
-    } catch (err) {
+  async asyncData ({ $content, app, params, error }) {
+    const path = `/${params.pathMatch || 'index'}`
+    
+    const [article] = await $content({ deep: true }).where({ path }).fetch()
+    
+    if (!article) {
       return error({ statusCode: 404, message: 'Article not found' })
     }
-  },
+
+    return {
+      article
+    }
+  }
 }
 </script>
