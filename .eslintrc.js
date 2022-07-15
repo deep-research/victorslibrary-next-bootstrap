@@ -14,6 +14,5 @@ module.exports = {
   rules: {
     // off, warn or error
     'vue/multi-word-component-names': 'off',
-    'node/handle-callback-err': 'off',
   },
 }

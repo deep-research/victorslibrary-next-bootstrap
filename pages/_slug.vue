@@ -1,8 +1,8 @@
 <template>
   <div>
-    <h1>{{ page.title }}</h1>
-    <p>{{ page.description }}</p>
-    <nuxt-content :document="page" />
+    <h1>{{ article.title }}</h1>
+    <p>{{ article.description }}</p>
+    <nuxt-content :document="article" />
   </div>
 </template>
 
@@ -10,14 +10,15 @@
 export default {
   async asyncData({ $content, params, error }) {
     const slug = params.slug || 'index'
-    const page = await $content(slug)
-      .fetch()
-      .catch((err) => {
-        error({ statusCode: 404, message: 'Article not found' })
-      })
 
-    return {
-      page,
+    try {
+      const article = await $content('/', slug).fetch()
+
+      return {
+        article,
+      }
+    } catch (err) {
+      return error({ statusCode: 404, message: 'Article not found' })
     }
   },
 }
