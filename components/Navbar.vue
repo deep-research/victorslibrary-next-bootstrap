@@ -49,10 +49,7 @@
 .navbar-toggler {
   color: white;
   border-color: white;
-  background-color: rgba(112, 128, 144, .72);
-    /* Slate Grey #708090  */
-  /* height: 31px;  */
-  /* width: 46px; */
+  background-color: slategray;
 }
 @media only screen and (max-width: 558px) {
   .navbar-brand {
