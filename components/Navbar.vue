@@ -42,7 +42,7 @@
   white-space: initial;
 }
 .navbar-brand:hover {
-  color: silver
+  color: silver;
 }
 .nav-link {
   color: white !important;
@@ -55,7 +55,7 @@
   color: white;
 }
 .navbar-toggler:hover {
-  color: silver
+  color: silver;
 }
 @media only screen and (max-width: 558px) {
   .navbar-brand {
