@@ -17,7 +17,7 @@ export default {
       { name: 'format-detection', content: 'telephone=no' },
     ],
     // https://favicon.io/favicon-generator/
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
