@@ -26,7 +26,7 @@
         background-size: 350px;
     }
     .navbar-brand {
-        font-family: 'Merienda One', cursive;
+        font-family: 'Merienda One', "Times New Roman", Times, serif;
         letter-spacing: .5rem;
         /* text-shadow: 2px 2px darkred; */
         /* text-shadow: 2px 2px royalblue; */
