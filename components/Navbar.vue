@@ -41,6 +41,9 @@
   font-size: 42px;
   white-space: initial;
 }
+.navbar-brand:hover {
+  color: silver
+}
 .nav-link {
   color: white !important;
 }
@@ -51,8 +54,8 @@
   border-width: 0px;
   color: white;
 }
-.navbar-toggler > .navbar-toggler-icon {
-  background-color: white;
+.navbar-toggler:hover {
+  color: silver
 }
 @media only screen and (max-width: 558px) {
   .navbar-brand {
