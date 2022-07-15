@@ -24,9 +24,7 @@ export default {
   css: [],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [
-    '@/plugins/gtag.js'
-  ],
+  plugins: ['@/plugins/gtag.js'],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -35,7 +33,7 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
-    '@nuxtjs/google-fonts'
+    '@nuxtjs/google-fonts',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -61,7 +59,7 @@ export default {
     manifest: {
       lang: 'en',
       name: "Victor's Library",
-      short_name: "V's Library"
+      short_name: "V's Library",
     },
   },
 
@@ -78,10 +76,10 @@ export default {
 
       // font-family: 'Merienda One', cursive;
       'Merienda+One': true,
-    }
+    },
   },
 
   bootstrapVue: {
-    icons: true
-  }
+    icons: true,
+  },
 }

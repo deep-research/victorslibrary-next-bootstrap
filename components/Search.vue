@@ -1,18 +1,18 @@
 <template>
-    <div>
-        {{articles}}
-    </div>
+  <div>
+    {{ articles }}
+  </div>
 </template>
 
 <script>
 export default {
   data() {
     return {
-        articles: null
+      articles: null,
     }
   },
   async fetch() {
-    this.articles = await this.$content("", { deep: true }).fetch();
-  }
+    this.articles = await this.$content('', { deep: true }).fetch()
+  },
 }
 </script>
