@@ -58,8 +58,8 @@ export default {
   pwa: {
     manifest: {
       lang: 'en',
-      name: "Victor's Library",
-      short_name: "V's Library",
+      // name: "Victor's Library",
+      // short_name: "V's Library",
     },
   },
 
