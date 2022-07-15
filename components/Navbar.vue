@@ -5,8 +5,8 @@
 
       <b-navbar-toggle target="navbar-toggle-collapse">
         <template #default="{ expanded }">
-          <b-icon v-if="expanded" icon="chevron-bar-up"></b-icon>
-          <b-icon v-else icon="chevron-bar-down"></b-icon>
+          <b-icon v-if="expanded" icon="chevron-compact-up"></b-icon>
+          <b-icon v-else icon="chevron-compact-down"></b-icon>
         </template>
       </b-navbar-toggle>
       <b-collapse id="navbar-toggle-collapse" is-nav>
@@ -49,8 +49,10 @@
 .navbar-toggler {
   color: white;
   border-color: white;
-  background-color: rgba(192, 192, 192, 0.5);
-  /* border-radius: 0; */
+  background-color: rgba(112, 128, 144, .72);
+    /* Slate Grey #708090  */
+  /* height: 31px;  */
+  /* width: 46px; */
 }
 @media only screen and (max-width: 558px) {
   .navbar-brand {
