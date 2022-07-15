@@ -48,7 +48,7 @@
 }
 .navbar-toggler {
   color: white;
-  border-color: white;
+  border-color: silver;
   background-color: slategray;
 }
 @media only screen and (max-width: 558px) {
