@@ -10,16 +10,16 @@
 export default {
   async asyncData({ $content, app, params, error }) {
     const slug = params.slug || 'index'
+    
+    const article = await $content('/', slug).fetch()
 
-    try {
-      const article = await $content('/', slug).fetch()
-
-      return {
-        article,
-      }
-    } catch (err) {
+    if (!article) {
       return error({ statusCode: 404, message: 'Article not found' })
+    } 
+    
+    return {
+      article
     }
-  },
+  }
 }
 </script>
