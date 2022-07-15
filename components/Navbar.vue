@@ -3,11 +3,9 @@
     <b-container>
       <b-navbar-brand href="/">Victor's Library</b-navbar-brand>
 
-    <b-navbar-toggle target="navbar-toggle-collapse">
-      <template>
+      <b-navbar-toggle target="navbar-toggle-collapse">
         <b-icon icon="list" scale="1.7"></b-icon>
-      </template>
-    </b-navbar-toggle>
+      </b-navbar-toggle>
 
       <b-collapse id="navbar-toggle-collapse" is-nav>
         <b-navbar-nav class="ml-auto">
@@ -51,7 +49,7 @@
   color: white;
 }
 .navbar-toggler > .navbar-toggler-icon {
-  background-color: white; 
+  background-color: white;
 }
 @media only screen and (max-width: 558px) {
   .navbar-brand {
