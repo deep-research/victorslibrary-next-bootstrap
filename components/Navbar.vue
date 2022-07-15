@@ -3,12 +3,12 @@
     <b-container>
       <b-navbar-brand href="/">Victor's Library</b-navbar-brand>
 
-    <b-navbar-toggle target="navbar-toggle-collapse">
-      <template #default="{ expanded }">
-        <b-icon v-if="expanded" icon="x" scale="2.4"></b-icon>
-        <b-icon v-else icon="list" scale="1.7"></b-icon>
-      </template>
-    </b-navbar-toggle>
+      <b-navbar-toggle target="navbar-toggle-collapse">
+        <template #default="{ expanded }">
+          <b-icon v-if="expanded" icon="x" scale="2.4"></b-icon>
+          <b-icon v-else icon="list" scale="1.7"></b-icon>
+        </template>
+      </b-navbar-toggle>
 
       <b-collapse id="navbar-toggle-collapse" is-nav>
         <b-navbar-nav class="ml-auto">
