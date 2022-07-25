@@ -29,17 +29,18 @@
 
 <style scoped>
 .navbar {
-  background-image: url('../static/background.png');
-  background-size: 350px;
+  /* background-image: url('../static/background.png'); */
+  /* background-size: 350px; */
+  background-color: darkslategrey !important;
 }
 .navbar-brand {
-  font-family: 'Merienda One', 'Times New Roman', Times, serif;
-  letter-spacing: 0.5rem;
+  /* font-family: 'Merienda One', 'Times New Roman', Times, serif; */
+  /* letter-spacing: 0.5rem; */
   /* text-shadow: 2px 2px darkred; */
   /* text-shadow: 2px 2px royalblue; */
   /* text-shadow: 2px 2px blueviolet; */
-  font-size: 42px;
-  white-space: initial;
+  /* font-size: 42px; */
+  /* white-space: initial; */
 }
 .navbar-brand:hover {
   color: silver;
@@ -59,12 +60,12 @@
 }
 @media only screen and (max-width: 558px) {
   .navbar-brand {
-    font-size: 32px;
+    /* font-size: 32px; */
   }
 }
 @media only screen and (max-width: 466px) {
   .navbar-brand {
-    max-width: 180px;
+    /* max-width: 180px; */
   }
 }
 </style>
