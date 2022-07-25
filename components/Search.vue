@@ -1,6 +1,8 @@
 <template>
   <div>
-    {{ articles }}
+    <div  v-for="(article, index) in articles" :key="index">
+      {{index+1}}. <NuxtLink :to="'/' + article.slug">{{ article.title }}</NuxtLink>
+    </div>
   </div>
 </template>
 

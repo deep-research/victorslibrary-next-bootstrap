@@ -20,4 +20,11 @@
     padding-left: 15px;
   }
 }
+
+::selection {
+  background: lightblue; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: lightblue; /* Gecko Browsers */
+}
 </style>

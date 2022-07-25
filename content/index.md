@@ -1,7 +1,7 @@
-# Home Page
+---
+title: Home Page
+---
 
-Welcome to Victor's Library
-
-## Data:
+# Pages:
 
 <search></search>

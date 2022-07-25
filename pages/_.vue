@@ -1,6 +1,9 @@
 <template>
   <div>
-    <h1>{{ article.title }}</h1>
+    <div v-if="article.slug!=='index'">
+      <b-breadcrumb><NuxtLink to="/">Home Page</NuxtLink></b-breadcrumb>
+      <h1>{{ article.title }}</h1>
+    </div>
     <p>{{ article.description }}</p>
     <nuxt-content :document="article" />
   </div>
