@@ -14,7 +14,7 @@ export default {
     }
   },
   async fetch() {
-    this.articles = await this.$content('', { deep: true }).fetch()
+    this.articles = await this.$content('', { deep: true }).sortBy('title').fetch()
   },
 }
 </script>
