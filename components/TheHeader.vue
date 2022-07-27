@@ -15,10 +15,13 @@
         </b-navbar-toggle>
     </b-navbar>
 
-    <b-sidebar id="sidebar" backdrop-variant="dark" backdrop shadow>
+    <b-sidebar id="sidebar" backdrop-variant="dark" backdrop shadow no-header>
       <template #default="{ hide }">
         <div class="px-3 py-2">
-          <p style="font-weight: 600">
+          <div class="text-right">
+            <b-icon scale="2.25" icon="x" @click="hide" class="float-end" id="close-sidebar-icon"></b-icon>
+          </div>
+          <p id="sidebar-headline" class="mt-2">
             Victor's Library is a repository of knowlege.
           </p>
           <nav class="mb-3">
@@ -73,10 +76,22 @@
 
   .navbar-toggler {
     border-width: 0px;
-    color: black;
+    color: rgba(0, 0, 0, 0.9)
   }
 
   .navbar-toggler:hover {
     color: silver;
+  }
+
+  #close-sidebar-icon {
+    color: rgba(0, 0, 0, 0.9)
+  }
+
+  #close-sidebar-icon:hover {
+    color: silver
+  }
+
+  #sidebar-headline {
+    font-weight: 600
   }
 </style>
