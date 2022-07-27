@@ -19,9 +19,9 @@
           </p>
           <nav class="mb-3">
             <b-nav vertical>
-              <b-nav-item href="http://reenchantment.band" @click="hide">Original Music</b-nav-item>
-              <b-nav-item href="http://songs.victorslibrary.com" @click="hide">Previous Website Version</b-nav-item>
-              <b-nav-item href="http://bandcamp.com/contact?b=1631569890" @click="hide">Contact</b-nav-item>
+              <b-nav-item href="http://reenchantment.band" @click="hide"><b-icon icon="music-note" style="margin-right: 2px" />Original Music</b-nav-item>
+              <b-nav-item href="http://songs.victorslibrary.com" @click="hide"><b-icon icon="clock-history" class="mr-2" />Previous Website Version</b-nav-item>
+              <b-nav-item href="http://bandcamp.com/contact?b=1631569890" @click="hide"><b-icon icon="mailbox" class="mr-2" />Contact</b-nav-item>
             </b-nav>
           </nav>
           <p>
@@ -35,12 +35,15 @@
 
 <script>
   import Vue from 'vue'
-  import { BootstrapVue, BIcon, BIconList, BIconX } from 'bootstrap-vue'
+  import { BootstrapVue, BIcon, BIconList, BIconX, BIconMusicNote, BIconMailbox, BIconClockHistory } from 'bootstrap-vue'
 
   Vue.use(BootstrapVue)
   Vue.component('BIcon', BIcon)
   Vue.component('BIconList', BIconList)
   Vue.component('BIconX', BIconX)  
+  Vue.component('BIconMusicNote', BIconMusicNote)
+  Vue.component('BIconMailbox', BIconMailbox)
+  Vue.component('BIconClockHistory', BIconClockHistory)
 
   export default {
     data() {
