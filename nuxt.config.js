@@ -48,8 +48,10 @@ export default {
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
     manifest: {
-      lang: 'en'
-    }
+      lang: 'en',
+      name: "Victor's Library",
+      short_name: "V's Library",
+    },
   },
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
