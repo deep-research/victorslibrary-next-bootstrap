@@ -1,3 +1,3 @@
 # This website is currently under construction.
 
-<img src="construction.jpg" alt="Girl in a jacket" width="500" class="mt-4">
+<b-img src="construction.jpg" fluid  alt="Website Under Construction" width="500" class="mt-4" />
