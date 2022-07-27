@@ -4,16 +4,20 @@
         <b-navbar-brand href="/">Victor's Library</b-navbar-brand>
 
         <b-navbar-toggle target="sidebar">
-        <template #default="{ expanded }">
-            <b-icon scale="2" v-if="expanded" icon="x"></b-icon>
-            <b-icon scale="1.5" v-else icon="list"></b-icon>
-        </template>
+          <!-- Toggle Between Two Icons -->
+          <!-- <template #default="{ expanded }">
+              <b-icon scale="2" v-if="expanded" icon="x"></b-icon>
+              <b-icon scale="1.5" v-else icon="list"></b-icon>
+          </template> -->
+          <template>
+              <b-icon scale="1.5" icon="list"></b-icon>
+          </template>
         </b-navbar-toggle>
     </b-navbar>
 
-    <b-sidebar id="sidebar" backdrop-variant="dark" backdrop shadow no-header>
+    <b-sidebar id="sidebar" backdrop-variant="dark" backdrop shadow>
       <template #default="{ hide }">
-        <div class="px-3 py-2 mt-4">
+        <div class="px-3 py-2">
           <p style="font-weight: 600">
             Victor's Library is a repository of knowlege.
           </p>
