@@ -2,6 +2,15 @@ export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
+  generate: {
+    fallback: true,
+    async routes() {
+      const { $content } = require('@nuxt/content')
+      const files = await $content({ deep: true }).only(['path']).fetch()
+      return files.map((file) => (file.path === '/index' ? '/' : file.path))
+    },
+  },
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'Victor\'s Library',
@@ -14,10 +23,6 @@ export default {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
-  },
-
-  generate: {
-    fallback: true
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
