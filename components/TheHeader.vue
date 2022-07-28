@@ -2,7 +2,7 @@
   <div>
     <b-navbar toggleable type="light" variant="faded" class="px-0">
         <b-navbar-brand href="/" class="m-0 d-flex">
-          <b-img src="icon.png" alt="Books Icon" width="32" class="mr-3" />
+          <b-img src="icon.png" alt="Books Icon" width="32" class="mr-3" id="books-icon" />
           <span>
             Victor's Library
           </span>
@@ -41,9 +41,9 @@
               </div>
             </b-button>
           </div>
-          <p id="sidebar-headline" class="mt-0">
+          <h5 id="sidebar-headline" class="mt-0">
             Victor's Library is a repository of knowlege.
-          </p>
+          </h5>
           <nav class="mb-3">
             <b-nav vertical>
               <b-nav-item href="http://reenchantment.band" @click="hide"><b-icon icon="music-note" style="margin-right: 2px" />Reenchantment.Band</b-nav-item>
@@ -99,6 +99,11 @@
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   }
 
+  /* .navbar-brand:hover #books-icon {
+    opacity: .6;
+    transition: opacity 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  } */
+
   .navbar-toggler {
     border-width: 0px;
     color: rgba(0, 0, 0, 0.9)
@@ -110,7 +115,6 @@
 
   #sidebar-headline {
     font-weight: 600;
-    font-size: 20px;
   }
 
   #close-sidebar-button {
