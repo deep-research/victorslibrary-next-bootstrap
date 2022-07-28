@@ -68,6 +68,7 @@
 
   .navbar-brand {
     font-weight: 600;
+    font-size: 24px;
   }
 
   .navbar-brand:hover {
@@ -88,7 +89,8 @@
   }
 
   #sidebar-headline {
-    font-weight: 600
+    font-weight: 600;
+    font-size: 18px;
   }
 
   #close-sidebar-button {
