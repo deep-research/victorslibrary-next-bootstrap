@@ -2,7 +2,7 @@
   <div>
     <b-navbar toggleable type="light" variant="faded" class="px-0">
       <b-navbar-brand href="/" class="m-0 d-flex align-items-center">
-        <b-img src="icon.png" alt="Books Icon" width="32" height="32" class="mr-3" id="books-icon" />
+        <b-img src="icon.png" alt="Books Icon" class="mr-3" width="32" />
         <div>
           Victor's Library
         </div>
@@ -84,11 +84,6 @@
     color: silver;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   }
-
-  /* .navbar-brand:hover #books-icon {
-    opacity: .6;
-    transition: opacity 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  } */
 
   .navbar-toggler {
     border-width: 0px;
