@@ -92,7 +92,7 @@
   }
 
   #close-sidebar-button {
-    background-color: white;
+    background-color: #f8f9fa;
     border:0;
   }
 
