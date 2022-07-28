@@ -14,13 +14,17 @@
                 <b-icon scale="2" v-if="expanded" icon="x"></b-icon>
                 <b-icon scale="1.5" v-else icon="list"></b-icon>
             </template> -->
-            <template>
-                <b-icon scale="1.7" icon="list"></b-icon>
-            </template>
+              <b-icon scale="1.7" icon="list"></b-icon>
+            <div>
+              Menu
+            </div>
           </b-button>
           
           <b-button id="search-button">
             <b-icon scale="1.1" icon="search"></b-icon>
+            <div>
+              Search
+            </div>
           </b-button>
         </div>
     </b-navbar>
@@ -29,15 +33,20 @@
       <template #default="{ hide }">
         <div class="px-3 py-2">
           <div class="text-right">
-            <b-button id="close-sidebar-button" @click="hide"><b-icon scale="2.4" icon="x" class="float-end" id="close-sidebar-icon"></b-icon></b-button>
+            <b-button id="close-sidebar-button" @click="hide">
+              <b-icon scale="2.4" icon="x" class="float-end"></b-icon>
+              <div>
+                Close
+              </div>
+            </b-button>
           </div>
-          <p id="sidebar-headline" class="mt-3">
+          <p id="sidebar-headline" class="mt-0">
             Victor's Library is a repository of knowlege.
           </p>
           <nav class="mb-3">
             <b-nav vertical>
-              <b-nav-item href="http://reenchantment.band" @click="hide"><b-icon icon="music-note" style="margin-right: 2px" />Reenchantment</b-nav-item>
-              <b-nav-item href="http://songs.victorslibrary.com" @click="hide"><b-icon icon="clock-history" class="mr-2" />Previous Website Version</b-nav-item>
+              <b-nav-item href="http://reenchantment.band" @click="hide"><b-icon icon="music-note" style="margin-right: 2px" />Reenchantment.Band</b-nav-item>
+              <b-nav-item href="http://songs.victorslibrary.com" @click="hide"><b-icon icon="clock-history" class="mr-2" />Previous Version</b-nav-item>
               <b-nav-item href="http://bandcamp.com/contact?b=1631569890" @click="hide"><b-icon icon="mailbox" class="mr-2" />Contact</b-nav-item>
             </b-nav>
           </nav>
@@ -73,11 +82,7 @@
 </script>
 
 <style scoped>
-  .navbar {
-    background-color: !important;
-  }
-
-  @media only screen and (max-width: 319px) {
+  @media only screen and (max-width: 350px) {
     .navbar {
       flex-direction: column;
     }
@@ -102,10 +107,6 @@
     color: silver;
   }
 
-  #close-sidebar-icon {
-    color: rgba(0, 0, 0, 0.9)
-  }
-
   #sidebar-headline {
     font-weight: 600;
     font-size: 20px;
@@ -114,6 +115,7 @@
   #close-sidebar-button {
     background-color: #f8f9fa;
     border:0;
+    color: rgba(0, 0, 0, 0.9)
   }
 
   #navbar-toggler-button, #search-button {
@@ -122,7 +124,7 @@
     color: rgba(0, 0, 0, 0.9);
   }
 
-  #close-sidebar-button:hover #close-sidebar-icon {
+  #close-sidebar-button:hover {
     color: silver;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   }
