@@ -20,13 +20,6 @@
             Menu
           </div>
         </b-button>
-          
-        <b-button id="search-button">
-          <b-icon scale="1.1" icon="search"></b-icon>
-          <div>
-            Search
-          </div>
-        </b-button>
       </div>
     </b-navbar>
 
@@ -62,7 +55,7 @@
 
 <script>
   import Vue from 'vue'
-  import { BootstrapVue, BIcon, BIconList, BIconX, BIconMusicNote, BIconMailbox, BIconClockHistory, BIconSearch } from 'bootstrap-vue'
+  import { BootstrapVue, BIcon, BIconList, BIconX, BIconMusicNote, BIconMailbox, BIconClockHistory } from 'bootstrap-vue'
 
   Vue.use(BootstrapVue)
   Vue.component('BIcon', BIcon)
@@ -71,7 +64,6 @@
   Vue.component('BIconMusicNote', BIconMusicNote)
   Vue.component('BIconMailbox', BIconMailbox)
   Vue.component('BIconClockHistory', BIconClockHistory)
-  Vue.component('BIconSearch', BIconSearch)
 
   export default {
     data() {
@@ -123,7 +115,7 @@
     color: rgba(0, 0, 0, 0.9)
   }
 
-  #navbar-toggler-button, #search-button {
+  #navbar-toggler-button {
     border:0;
     background-color: white;
     color: rgba(0, 0, 0, 0.9);
@@ -134,11 +126,11 @@
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   }
 
-  #navbar-toggler-button:hover, #search-button:hover {
+  #navbar-toggler-button:hover {
     color: silver;
   }
 
-  #close-sidebar-button:focus, #navbar-toggler-button:focus, #search-button:focus {
+  #close-sidebar-button:focus, #navbar-toggler-button:focus {
     outline:none !important;
     outline-width: 0 !important;
     box-shadow: none;
