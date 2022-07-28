@@ -1,33 +1,33 @@
 <template>
   <div>
     <b-navbar toggleable type="light" variant="faded" class="px-0">
-        <b-navbar-brand href="/" class="m-0 d-flex">
-          <b-img src="icon.png" alt="Books Icon" width="32" class="mr-3" id="books-icon" />
-          <span>
-            Victor's Library
-          </span>
-        </b-navbar-brand>
+      <b-navbar-brand href="/" class="m-0 d-flex">
+        <b-img src="icon.png" alt="Books Icon" width="32" class="mr-3" id="books-icon" />
+        <span>
+          Victor's Library
+        </span>
+      </b-navbar-brand>
 
-        <div>
-          <b-button v-b-toggle.sidebar id="navbar-toggler-button">
-            <!-- Toggle Between Two Icons -->
-            <!-- <template #default="{ expanded }">
-                <b-icon scale="2" v-if="expanded" icon="x"></b-icon>
-                <b-icon scale="1.5" v-else icon="list"></b-icon>
-            </template> -->
-              <b-icon scale="1.7" icon="list"></b-icon>
-            <div>
-              Menu
-            </div>
-          </b-button>
+      <div>
+        <b-button v-b-toggle.sidebar id="navbar-toggler-button">
+          <!-- Toggle Between Two Icons -->
+          <!-- <template #default="{ expanded }">
+              <b-icon scale="2" v-if="expanded" icon="x"></b-icon>
+              <b-icon scale="1.5" v-else icon="list"></b-icon>
+          </template> -->
+            <b-icon scale="1.7" icon="list"></b-icon>
+          <div>
+            Menu
+          </div>
+        </b-button>
           
-          <b-button id="search-button">
-            <b-icon scale="1.1" icon="search"></b-icon>
-            <div>
-              Search
-            </div>
-          </b-button>
-        </div>
+        <b-button id="search-button">
+          <b-icon scale="1.1" icon="search"></b-icon>
+          <div>
+            Search
+          </div>
+        </b-button>
+      </div>
     </b-navbar>
 
     <b-sidebar id="sidebar" backdrop-variant="dark" backdrop shadow no-header>
