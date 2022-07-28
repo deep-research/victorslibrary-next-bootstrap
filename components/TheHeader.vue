@@ -19,7 +19,7 @@
       <template #default="{ hide }">
         <div class="px-3 py-2">
           <div class="text-right">
-            <b-icon scale="3" icon="x" @click="hide" class="float-end" id="close-sidebar-icon"></b-icon>
+            <b-button id="close-sidebar-button" @click="hide"><b-icon scale="2.4" icon="x" class="float-end" id="close-sidebar-icon"></b-icon></b-button>
           </div>
           <p id="sidebar-headline" class="mt-2">
             Victor's Library is a repository of knowlege.
@@ -87,11 +87,23 @@
     color: rgba(0, 0, 0, 0.9)
   }
 
-  #close-sidebar-icon:hover {
-    color: silver
-  }
-
   #sidebar-headline {
     font-weight: 600
   }
+
+  #close-sidebar-button {
+    background-color: white;
+    border:0;
+  }
+
+  #close-sidebar-button:hover #close-sidebar-icon {
+    color: silver;
+  }
+
+  #close-sidebar-button:focus {
+    outline:none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;  }
 </style>
