@@ -1,10 +1,11 @@
 <template>
   <div>
     <b-navbar toggleable type="light" variant="faded" class="px-0">
-        <!-- <NuxtLink to="/"><b-img src="icon.png" alt="Books" id="books-icon" width="32" /></NuxtLink> -->
-
-        <b-navbar-brand href="/" class="m-0">
-          Victor's Library
+        <b-navbar-brand href="/" class="m-0 d-flex">
+          <b-img src="icon.png" alt="Books Icon" width="32" class="mr-3" />
+          <span>
+            Victor's Library
+          </span>
         </b-navbar-brand>
 
         <div>
@@ -82,7 +83,7 @@
 </script>
 
 <style scoped>
-  @media only screen and (max-width: 350px) {
+  @media only screen and (max-width: 395px) {
     .navbar {
       flex-direction: column;
     }
@@ -140,18 +141,4 @@
     -moz-box-shadow: none;
     -webkit-box-shadow: none;  
   }
-
-  /* @media only screen and (max-width: 319px) {
-    #books-icon {
-      display: none;
-    }
-
-    .navbar-brand {
-      margin-left: 0 !important;
-    }
-  } */
-
-  /* #books-icon:hover {
-    opacity: .6;
-  } */
 </style>
