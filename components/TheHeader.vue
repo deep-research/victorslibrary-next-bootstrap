@@ -1,11 +1,11 @@
 <template>
   <div>
     <b-navbar toggleable type="light" variant="faded" class="px-0">
-      <b-navbar-brand href="/" class="m-0 d-flex">
-        <b-img src="icon.png" alt="Books Icon" width="32" class="mr-3" id="books-icon" />
-        <span>
+      <b-navbar-brand href="/" class="m-0 d-flex align-items-center">
+        <b-img src="icon.png" alt="Books Icon" width="32" height="32" class="mr-3" id="books-icon" />
+        <div>
           Victor's Library
-        </span>
+        </div>
       </b-navbar-brand>
 
       <div>
@@ -75,12 +75,6 @@
 </script>
 
 <style scoped>
-  @media only screen and (max-width: 395px) {
-    .navbar {
-      flex-direction: column;
-    }
-  }
-
   .navbar-brand {
     font-weight: 600;
     font-size: 24px;
