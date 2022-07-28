@@ -90,7 +90,7 @@
 
   #sidebar-headline {
     font-weight: 600;
-    font-size: 18px;
+    font-size: 20px;
   }
 
   #close-sidebar-button {
