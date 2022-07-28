@@ -10,7 +10,7 @@
               <b-icon scale="1.5" v-else icon="list"></b-icon>
           </template> -->
           <template>
-              <b-icon scale="1.5" icon="list"></b-icon>
+              <b-icon scale="1.7" icon="list"></b-icon>
           </template>
         </b-navbar-toggle>
     </b-navbar>
@@ -19,7 +19,7 @@
       <template #default="{ hide }">
         <div class="px-3 py-2">
           <div class="text-right">
-            <b-icon scale="2.25" icon="x" @click="hide" class="float-end" id="close-sidebar-icon"></b-icon>
+            <b-icon scale="3" icon="x" @click="hide" class="float-end" id="close-sidebar-icon"></b-icon>
           </div>
           <p id="sidebar-headline" class="mt-2">
             Victor's Library is a repository of knowlege.
