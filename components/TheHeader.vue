@@ -34,7 +34,7 @@
               </div>
             </b-button>
           </div>
-          <h5 id="sidebar-headline" class="mt-0">
+          <h5 id="sidebar-headline" class="mt-1">
             Victor's Library is a repository of knowlege.
           </h5>
           <nav class="mb-3">
