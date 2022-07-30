@@ -15,7 +15,7 @@
               <b-icon scale="2" v-if="expanded" icon="x"></b-icon>
               <b-icon scale="1.5" v-else icon="list"></b-icon>
           </template> -->
-            <b-icon scale="1.7" icon="list"></b-icon>
+            <!-- <b-icon scale="1.7" icon="list"></b-icon> -->
           <div>
             Menu
           </div>
@@ -28,7 +28,7 @@
         <div class="px-3 py-2">
           <div class="text-right">
             <b-button id="close-sidebar-button" @click="hide">
-              <b-icon scale="2.4" icon="x" class="float-end"></b-icon>
+              <!-- <b-icon scale="2.4" icon="x" class="float-end"></b-icon> -->
               <div>
                 Close
               </div>
@@ -39,9 +39,9 @@
           </h5>
           <nav class="mb-3">
             <b-nav vertical>
-              <b-nav-item href="http://reenchantment.band" @click="hide"><b-icon icon="music-note" style="margin-right: 2px" />Reenchantment.Band</b-nav-item>
-              <b-nav-item href="http://songs.victorslibrary.com" @click="hide"><b-icon icon="clock-history" class="mr-2" />Previous Version</b-nav-item>
-              <b-nav-item href="http://bandcamp.com/contact?b=1631569890" @click="hide"><b-icon icon="mailbox" class="mr-2" />Contact</b-nav-item>
+              <!-- <b-nav-item href="http://reenchantment.band" @click="hide"><b-icon icon="music-note" style="margin-right: 2px" />Reenchantment.Band</b-nav-item> -->
+              <!-- <b-nav-item href="http://songs.victorslibrary.com" @click="hide"><b-icon icon="clock-history" class="mr-2" />Previous Version</b-nav-item> -->
+              <!-- <b-nav-item href="http://bandcamp.com/contact?b=1631569890" @click="hide"><b-icon icon="mailbox" class="mr-2" />Contact</b-nav-item> -->
             </b-nav>
           </nav>
           <p>
@@ -55,15 +55,15 @@
 
 <script>
   import Vue from 'vue'
-  import { BootstrapVue, BIcon, BIconList, BIconX, BIconMusicNote, BIconMailbox, BIconClockHistory } from 'bootstrap-vue'
+  // import { BootstrapVue, BIcon, BIconList, BIconX, BIconMusicNote, BIconMailbox, BIconClockHistory } from 'bootstrap-vue'
 
-  Vue.use(BootstrapVue)
-  Vue.component('BIcon', BIcon)
-  Vue.component('BIconList', BIconList)
-  Vue.component('BIconX', BIconX)  
-  Vue.component('BIconMusicNote', BIconMusicNote)
-  Vue.component('BIconMailbox', BIconMailbox)
-  Vue.component('BIconClockHistory', BIconClockHistory)
+  // Vue.use(BootstrapVue)
+  // Vue.component('BIcon', BIcon)
+  // Vue.component('BIconList', BIconList)
+  // Vue.component('BIconX', BIconX)  
+  // Vue.component('BIconMusicNote', BIconMusicNote)
+  // Vue.component('BIconMailbox', BIconMailbox)
+  // Vue.component('BIconClockHistory', BIconClockHistory)
 
   export default {
     data() {
