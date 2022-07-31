@@ -3,7 +3,7 @@
 </template>
 
 <script lang="ts">
-  export let name: string = 'world';
+  export let name: string = 'hello world';
 </script>
 
 <style lang="scss">
