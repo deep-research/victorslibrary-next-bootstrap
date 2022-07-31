@@ -1,6 +1,8 @@
-import adapter from "@sveltejs/adapter-static";
+import { mdsvex } from 'mdsvex';
+import mdsvexConfig from './mdsvex.config.js';
+import adapter from '@sveltejs/adapter-static';
 import preprocess from 'svelte-preprocess';
-import autoprefixer from 'autoprefixer'
+import autoprefixer from 'autoprefixer';
 
 const dev = process.env.NODE_ENV === 'development';
 
@@ -17,35 +19,40 @@ const dev = process.env.NODE_ENV === 'development';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
+	extensions: ['.svelte', ...mdsvexConfig.extensions],
+
 	// Consult https://github.com/sveltejs/svelte-preprocess
 	// for more information about preprocessors
-	preprocess: preprocess({
-		sourceMap: dev,
-		scss: {
-			// We can use a path relative to the root because
-			// svelte-preprocess automatically adds it to `includePaths`
-			// if none is defined.
+	preprocess: [
+		preprocess({
+			sourceMap: dev,
+			scss: {
+				// We can use a path relative to the root because
+				// svelte-preprocess automatically adds it to `includePaths`
+				// if none is defined.
 				prependData: `@import 'src/styles/variables.scss';`
 			},
-		postcss: {
-			plugins: [autoprefixer()]
-		}		
-	}),
+			postcss: {
+				plugins: [autoprefixer()]
+			}
+		}),
+		mdsvex(mdsvexConfig)
+	],
 
-    kit: {
-        adapter: adapter({
-            pages: "docs",
-            assets: "docs"
-        }),
-        paths: {
-            // change below to your repo name
-            base: dev ? "" : "",
-        },
+	kit: {
+		adapter: adapter({
+			pages: 'docs',
+			assets: 'docs'
+		}),
+		paths: {
+			// change below to your repo name
+			base: dev ? '' : ''
+		},
 		prerender: {
 			// This can be false if you're using a fallback (i.e. SPA mode)
 			default: true
 		}
-    }
+	}
 };
 
 export default config;
