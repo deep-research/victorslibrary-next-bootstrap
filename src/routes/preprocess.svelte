@@ -8,6 +8,6 @@
 
 <style lang="scss">
   h1 {
-    color: $primary-color;
+    color: $custom-color;
   }
 </style>
