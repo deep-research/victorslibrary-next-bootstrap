@@ -12,6 +12,9 @@ const dev = process.env.NODE_ENV === 'development';
 // 2. Svelte-Preprocess Getting Started Guide
 // https://github.com/sveltejs/svelte-preprocess/blob/main/docs/getting-started.md
 
+// 3. How to test SvelteKit app with Jest
+// https://blog.stranianelli.com/test-sveltekit-app-with-jest-english/
+
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	// Consult https://github.com/sveltejs/svelte-preprocess
