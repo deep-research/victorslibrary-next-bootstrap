@@ -17,6 +17,12 @@ const dev = process.env.NODE_ENV === 'development';
 // 3. How to test SvelteKit app with Jest
 // https://blog.stranianelli.com/test-sveltekit-app-with-jest-english/
 
+// 4. Add mdsvex to Svelte
+// https://github.com/svelte-add/mdsvex
+
+// 5. Add Bootstrap to Svelte
+// https://github.com/svelte-add/bootstrap
+
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	extensions: ['.svelte', ...mdsvexConfig.extensions],
@@ -30,7 +36,8 @@ const config = {
 				// We can use a path relative to the root because
 				// svelte-preprocess automatically adds it to `includePaths`
 				// if none is defined.
-				prependData: `@import 'src/styles/variables.scss';`
+				// prependData: `@import 'src/styles/variables.scss';`
+				prependData: '@use "src/styles/variables.scss" as *;'
 			},
 			postcss: {
 				plugins: [autoprefixer()]
