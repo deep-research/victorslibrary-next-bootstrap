@@ -12,7 +12,7 @@
               <NuxtLink class="nav-link" exactActiveClass="active" aria-current="page" to="/">Home Page</NuxtLink>
             </li>
             <li class="nav-item">
-              <NuxtLink class="nav-link" exactActiveClass="active" to="/page">Internal Link</NuxtLink>
+              <NuxtLink class="nav-link" exactActiveClass="active" to="/internal-link">Internal Link</NuxtLink>
             </li>
             <!-- <li class="nav-item dropdown">
               <NuxtLink class="nav-link dropdown-toggle" to="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
