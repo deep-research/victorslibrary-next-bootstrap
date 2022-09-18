@@ -2,8 +2,7 @@
   <main>
     <ContentDoc>
       <template #not-found>
-        <h1>Page Not Found</h1>
-        <NuxtLink to="/">Home</NuxtLink>
+        <NotFound></NotFound>
       </template>
     </ContentDoc>
   </main>
