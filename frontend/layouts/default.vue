@@ -9,24 +9,24 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <NuxtLink class="nav-link active" aria-current="page" to="/">Home Page</NuxtLink>
+              <NuxtLink class="nav-link" exactActiveClass="active" aria-current="page" to="/">Home Page</NuxtLink>
             </li>
             <li class="nav-item">
-              <NuxtLink class="nav-link" to="/page">Internal Link</NuxtLink>
+              <NuxtLink class="nav-link" exactActiveClass="active" to="/page">Internal Link</NuxtLink>
             </li>
             <!-- <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <NuxtLink class="nav-link dropdown-toggle" to="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Dropdown
-              </a>
+              </NuxtLink>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><NuxtLink class="dropdown-item" to="#">Action</NuxtLink></li>
+                <li><NuxtLink class="dropdown-item" to="#">Another action</NuxtLink></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><NuxtLink class="dropdown-item" to="#">Something else here</NuxtLink></li>
               </ul>
             </li> -->
             <!-- <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
+              <NuxtLink class="nav-link disabled">Disabled</NuxtLink>
             </li> -->
           </ul>
           <!-- <form class="d-flex" role="search">
