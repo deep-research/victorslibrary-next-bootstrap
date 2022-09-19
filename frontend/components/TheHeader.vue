@@ -14,6 +14,9 @@
             <li class="nav-item">
               <NuxtLink class="nav-link" activeClass="active" to="/search">Search</NuxtLink>
             </li>
+            <li class="nav-item">
+              <NuxtLink class="nav-link" activeClass="active" to="http://reenchantment.band/">Music</NuxtLink>
+            </li>
             <!-- <li class="nav-item dropdown">
               <NuxtLink class="nav-link dropdown-toggle" to="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Dropdown
