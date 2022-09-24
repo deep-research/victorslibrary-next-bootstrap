@@ -4,8 +4,6 @@
 
 A Repository of Knowledge. Currently focused on data gathering.
 
-© 2022 Victor Fisher
-
 ## Methodology
 
 Assemble a large collection of nodes in pure markdown. Everything else including databases, statistics, metadata, user interface, testing, type checking, searching and cataloging should be considered a higher level of abstraction and therefore of a less critical value. Scale the data itself rather than the infrastructure. The interconnections are what matter, but they naturally arise from throwing it all together.
