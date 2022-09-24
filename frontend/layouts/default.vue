@@ -1,7 +1,7 @@
 <template>
   <div>
     <TheHeader />
-    <div class="container mt-4">
+    <div class="container">
       <slot />
     </div>
   </div>
