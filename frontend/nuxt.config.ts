@@ -8,5 +8,15 @@ export default defineNuxtConfig({
   ],
   content: {
     // https://content.nuxtjs.org/api/configuration
+  },
+  app: {
+    head: {
+      link: [
+        {
+          rel: "stylesheet",
+          href: "https://cdn.jsdelivr.net/npm/water.css@2/out/water.css"
+        }
+      ]
+    }
   }
 })
