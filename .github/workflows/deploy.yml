@@ -30,6 +30,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
         cache-dependency-path: './frontend/yarn.lock'
+      working-directory: ./frontend/
     - name: Install dependencies
       run: |
         if [ -e yarn.lock ]; then
