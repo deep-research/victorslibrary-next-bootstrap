@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "export": "next build && next export && next-image-export-optimizer frontend/next.config.js",    "start": "next start",
+    "export": "next build && next export",
+    "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
