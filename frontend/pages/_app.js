@@ -1,6 +1,5 @@
 import '../styles/globals.css'
 
-// https://www.kindacode.com/article/how-to-correctly-use-bootstrap-5-in-next-js/#Installing
 import 'bootstrap/dist/css/bootstrap.css'
 import { useEffect } from "react";
 
