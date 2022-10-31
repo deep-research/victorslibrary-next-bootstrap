@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "next-compose-plugins": "^2.2.1",
+    "next-export-optimize-images": "^1.9.0"
+  }
+}
