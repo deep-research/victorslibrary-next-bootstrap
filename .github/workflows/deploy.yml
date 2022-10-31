@@ -45,4 +45,6 @@ jobs:
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@v4
       with:
-        folder: frontend/build # The folder the action should deploy.
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN_KEY }}
+        BRANCH: gh-pages
+        folder: build # The folder the action should deploy.
