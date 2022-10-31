@@ -4,7 +4,7 @@ const withExportImages = require('next-export-optimize-images')
 
 const plugins = [
   withExportImages
-];
+]
 
 const nextConfig = {
   reactStrictMode: true,
