@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
-import nightForest from '../public/night-forest.jpg';
+import ExportedImage from "next-image-export-optimizer";
 
 export default function Home() {
   return (
@@ -56,7 +56,13 @@ export default function Home() {
         </div>
       </main>
 
-      <img src="/night-forest.jpg" alt="Night Forest" />
+      <ExportedImage
+        src="images/night-forest.jpg"
+        alt="Large Image"
+        width={500}
+        height={500}
+        useWebp={process.env.nextImageExportOptimizer_storePicturesInWEBP}
+      />;
 
       <footer className={styles.footer}>
         <a
@@ -66,7 +72,7 @@ export default function Home() {
         >
           Powered by{' '}
           <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
+            {/* <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} /> */}
           </span>
         </a>
       </footer>
