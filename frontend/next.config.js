@@ -1,7 +1,6 @@
 // module.exports = nextConfig
-const withPlugins = require('next-compose-plugins');
+// const withPlugins = require('next-compose-plugins');
 const optimizedImages = require('next-optimized-images');
-const { isModuleInstalled } = require('next-optimized-images/lib/loaders')
 
 module.exports = optimizedImages({
   images: {
