@@ -1,7 +1,6 @@
 // module.exports = nextConfig
 // const withPlugins = require('next-compose-plugins');
-// const withOptimizedImages = require('next-optimized-images');
-const withOptimizedImages = dynamic(() => import('next-optimized-images'), { ssr: false })
+const withOptimizedImages = require('next-optimized-images');
 
 module.exports = withOptimizedImages({
   images: {
