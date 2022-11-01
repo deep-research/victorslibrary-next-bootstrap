@@ -62,7 +62,7 @@ export default function Home() {
         >
           Powered by{' '}
           <p>
-            <ExportedImage src="images/nextjs.jpg" alt="Vercel Logo" width={200} height={100}   useWebp={process.env.nextImageExportOptimizer_storePicturesInWEBP} />
+            <ExportedImage src="images/nextjs.jpg" alt="Vercel Logo" width={200} height={100} useWebp={process.env.nextImageExportOptimizer_storePicturesInWEBP} />
           </p>
         </a>
       </footer>
