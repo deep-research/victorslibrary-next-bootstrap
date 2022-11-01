@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import ExportedImage from "next-image-export-optimizer";
+import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -54,10 +54,6 @@ export default function Home() {
         </div>
       </main>
 
-      <ExportedImage src="/example.jpg" alt="Vercel Logo" width={200} height={100} useWebp={process.env.nextImageExportOptimizer_storePicturesInWEBP} />
-      <ExportedImage src="/example.png" alt="Vercel Logo" width={200} height={100} useWebp={process.env.nextImageExportOptimizer_storePicturesInWEBP} />
-      <ExportedImage src="/example.gif" alt="Vercel Logo" width={200} height={100} useWebp={process.env.nextImageExportOptimizer_storePicturesInWEBP} />
-
       <footer className={styles.footer}>
         <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
@@ -66,7 +62,7 @@ export default function Home() {
         >
           Powered by{' '}
           <span className={styles.logo}>
-            <ExportedImage src="/vercel.svg" alt="Vercel Logo" width={72} height={16} useWebp={process.env.nextImageExportOptimizer_storePicturesInWEBP} />
+            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
           </span>
         </a>
       </footer>
