@@ -1,9 +1,6 @@
-/** @type {import('next').NextConfig} */
+// @type {import('next').NextConfig}
 
-const plugins = [
-]
-
-const nextConfig = {
+ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   
@@ -12,4 +9,4 @@ const nextConfig = {
   }
 }
 
-module.exports = plugins.reduce((config, plugin) => plugin(config), nextConfig)
+module.exports = nextConfig
