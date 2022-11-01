@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import ExportedImage from "next-image-export-optimizer";
+import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -61,9 +61,9 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           Powered by{' '}
-          <p>
-            <ExportedImage src="images/nextjs.jpg" alt="Vercel Logo" width={200} height={100} useWebp={process.env.nextImageExportOptimizer_storePicturesInWEBP} />
-          </p>
+          <span className={styles.logo}>
+            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
+          </span>
         </a>
       </footer>
     </div>
