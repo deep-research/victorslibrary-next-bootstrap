@@ -6,6 +6,7 @@ const plugins = [
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  
   images: {
     unoptimized: true,
   },
@@ -28,7 +29,7 @@ const nextConfig = {
     // forget to set `placeholder="none"`, you'll see 404 errors for the missing
     // placeholder images in the console.
     nextImageExportOptimizer_generateAndUseBlurImages: true,
-  },
+  }
 }
 
 module.exports = plugins.reduce((config, plugin) => plugin(config), nextConfig)
