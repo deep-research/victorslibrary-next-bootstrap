@@ -11,9 +11,9 @@ const nextConfig = {
 }
 
 module.exports = () => {
- const plugins = [
-  withOptimizedImages
-]
+  const plugins = [
+    withOptimizedImages
+  ]
 
- return plugins.reduce((config, plugin) => plugin(config), nextConfig);
+  return plugins.reduce((config, plugin) => plugin(config), nextConfig);
 }
